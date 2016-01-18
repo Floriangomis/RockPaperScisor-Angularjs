@@ -1,0 +1,80 @@
+/* Will be compiled down to a single stylesheet with your sass files */
+    .container-signs {
+        position: absolute;
+        top: 150px;;
+        left: 35%;
+    }
+
+    .rock {
+		height:150px;
+		width:150px;
+		background-image: url('images/rock.png');
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: 50% 50%;
+		margin-left:5px;
+	}
+	.paper {
+		height:150px;
+		width:150px;
+		background-image: url('images/paper.png');
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: 50% 50%;
+		margin-left:5px;
+	}
+	.scisor {
+		height:200px;
+		width:150px;
+		background-image: url('images/scisor.png');
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: 50% 50%;
+		margin-left:5px;
+	}
+    
+    .score {
+        position: absolute;
+        top: 400px;
+        left: 48%;
+    }
+    
+    .information {
+        position: absolute;
+        top: 370px;
+        left: 48%;
+    }
+
+    .playerSign {
+        position: absolute;
+        top: 400px;
+        left: 0px;
+        
+        width: 100px;
+        height: 100px;
+
+        visibility: hidden;
+    }
+    
+    .playerSign.action {
+        visibility: visible;
+        transition-duration: 1000ms;
+        transform: translate(350px , 0);
+    }
+    
+    .npcSign {
+        position: absolute;
+        top: 400px;
+        right: 0px;
+        
+        width: 100px;
+        height: 100px;
+
+        visibility: hidden;
+    }
+    
+    .npcSign.action {
+        visibility: visible;
+        transition-duration: 1000ms;
+        transform: translate(-350px , 0);
+    }

@@ -1,0 +1,23 @@
+<div>
+    <div class="information">
+        {{ informationDisplay }}
+    </div>
+
+    <div class="score">
+        <h2> {{ playerScore }} - {{ npcScore }} </h2>
+    </div>
+
+    <div id="signs" class="container-signs" style="display:flex;flex-direction:row;margin:0 auto;">
+        <div sign="rock" class="rock"> </div>
+        <div sign="paper" class="paper"> </div>
+        <div sign="scisor" class="scisor"> </div>
+    </div>
+    
+    <div class="playerSign">
+        <img src="./styles/images/{{ signPlayer }}.png" alt="" />
+    </div>
+    <div class="npcSign">
+        <img src="./styles/images/{{ signNpc }}.png" alt="" />
+    </div>
+    
+</div>
